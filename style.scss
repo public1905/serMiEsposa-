@@ -1,0 +1,55 @@
+$azul: #54f;
+$negro: #444;
+$blanco: #f0f0f0;
+$rojo: #a00;
+
+h3, h2 {
+  font-family: Lato;
+  color: $azul;
+  margin-left: 6px;
+  text-align: center;
+}
+*{
+  outline: none;
+  margin: none;
+  padding: none;
+  transition: .5s;
+}
+.container{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  .element{
+    width: 300px;
+    height: 170px;
+    box-shadow: 2px 2px 9px $negro;
+    border-radius:12px;
+    position: relative;
+    overflow: hidden;
+
+    .btn{
+      border: none;
+      display: inline-block;
+      text-align:center;
+      background: $azul;
+      color: $blanco;
+      padding: 7px;
+      width: 100px;
+      margin-top: 7px;
+      margin-left: 27px;
+      border-radius:40px;
+      user-select: none;
+      cursor: pointer;
+      
+      &:hover{
+        color: $azul;
+        background: $blanco;
+        border: solid 1px $azul
+      }
+
+    }
+  }
+}
